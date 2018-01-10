@@ -9,5 +9,6 @@ namespace InterfaceDemo
     interface ILog
     {
         void Debug();
+        void Error();
     }
 }
