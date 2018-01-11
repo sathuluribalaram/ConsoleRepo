@@ -8,7 +8,7 @@ namespace InterfaceDemo
 {
     interface ILog
     {
-        void Debug();
+        void Debug(string debugMessage);
         void Error();
     }
 }
