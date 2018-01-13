@@ -12,14 +12,17 @@ namespace InterfaceDemo
     {
         static void Main(string[] args)
         {
-            CommonFunctions.Log.Debug("Entered Main method.");
+            //CommonFunctions.Log.Debug("Entered Main method.");
 
-            CommonFunctions.Log.Error();
+            //CommonFunctions.Log.Error();
             //Log LogObj = new Log();
             //LogObj.Debug("Entered Main method.");
             //LogObj.Error();
 
             //LogObj.Debug("Exit from Main method.");
+            Sorting sortingObj = new Sorting();
+            sortingObj.ReadConsoleData();
+            Console.WriteLine("Max Element of given Array is " + sortingObj.MaxelementofArray());
 
             Console.ReadLine();
         }
