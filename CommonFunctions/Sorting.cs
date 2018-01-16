@@ -26,7 +26,7 @@ namespace CommonFunctions
         {
             int temp;
             int reference = 0;
-            for (int j = 0; reference < (arr.Length - 2) && j < (arr.Length - 1); j++)
+            for (int j = 0; reference < (arr.Length - 1) && j < (arr.Length); j++)
             {
                 if (arr[reference] < arr[j])
                 {
@@ -38,6 +38,33 @@ namespace CommonFunctions
             return arr[reference];
 
         }
+        public int[] SortingArray()
+        {
+            // 1    34  56  78  100
+            
+            // i:0, j:1
+            //
+           
+
+            int temp;
+            int reference = 0;
+            int j = 0;
+            for (reference = 0; reference <= arr.Length - 1; reference++)
+            {
+                for (j = reference ; j <= arr.Length - 1; j++)
+                {
+                    if (arr[reference] < arr[j])
+                    {
+                        temp = arr[j];
+                        arr[j] = arr[reference];
+                        arr[reference] = temp;
+                    }
+
+                }
+            }
+            return arr;
+        }
+
 
 
 

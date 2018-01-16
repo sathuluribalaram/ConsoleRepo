@@ -23,6 +23,12 @@ namespace InterfaceDemo
             Sorting sortingObj = new Sorting();
             sortingObj.ReadConsoleData();
             Console.WriteLine("Max Element of given Array is " + sortingObj.MaxelementofArray());
+            int[] descendingorder = sortingObj.SortingArray();
+            for (int i = 0; i < descendingorder.Length; i++)
+            {
+
+                Console.WriteLine("Array in descending order " + descendingorder[i]);
+            }
 
             Console.ReadLine();
         }
