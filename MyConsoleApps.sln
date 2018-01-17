@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceDemo", "InterfaceD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFunctions", "CommonFunctions\CommonFunctions.csproj", "{A5012674-CDBE-4898-97F4-368FECCF0365}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPSConcepts", "OOPSConcepts\OOPSConcepts.csproj", "{DFB17281-8562-4028-ACC6-2B963C8228EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A5012674-CDBE-4898-97F4-368FECCF0365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5012674-CDBE-4898-97F4-368FECCF0365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5012674-CDBE-4898-97F4-368FECCF0365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB17281-8562-4028-ACC6-2B963C8228EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB17281-8562-4028-ACC6-2B963C8228EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB17281-8562-4028-ACC6-2B963C8228EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB17281-8562-4028-ACC6-2B963C8228EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
