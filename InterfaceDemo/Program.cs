@@ -29,13 +29,14 @@ namespace InterfaceDemo
 
             //    Console.WriteLine("Array in descending order " + descendingorder[i]);
             //}
-            Console.WriteLine("Enter Main String");
-            string mainstring = Console.ReadLine();
+            //Console.WriteLine("Enter Main String");
+            //string mainstring = Console.ReadLine();
 
             StringOperations stringoperationsobj = new StringOperations();
             string substring=stringoperationsobj.ReadSubstring();
-            string output=stringoperationsobj.Issubstring(mainstring,substring);
-            Console.WriteLine(output);
+            //string output=stringoperationsobj.Issubstring(mainstring,substring);
+            //Console.WriteLine(output);
+            Console.WriteLine("reverse of the string is " + stringoperationsobj.ReverseString(substring));
             Console.ReadLine();
         }
             

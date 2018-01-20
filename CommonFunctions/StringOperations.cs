@@ -55,6 +55,24 @@ namespace CommonFunctions
 
             return output;
         }
+
+        public string ReverseString(string substring)
+        {
+
+            char temp;
+            char[] mainstring = substring.ToCharArray();
+            int j = mainstring.Length - 1;
+            for (int i = 0; i < mainstring.Length / 2; i++)
+            {
+                temp = mainstring[i];
+                mainstring[i] = mainstring[j];
+                mainstring[j] = temp;
+                j--;
+            }
+
+            string reverse = new string(mainstring);
+            return reverse;
+        }
     }
 }
 
