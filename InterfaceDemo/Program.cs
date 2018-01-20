@@ -20,17 +20,26 @@ namespace InterfaceDemo
             //LogObj.Error();
 
             //LogObj.Debug("Exit from Main method.");
-            Sorting sortingObj = new Sorting();
-            sortingObj.ReadConsoleData();
-            Console.WriteLine("Max Element of given Array is " + sortingObj.MaxelementofArray());
-            int[] descendingorder = sortingObj.SortingArray();
-            for (int i = 0; i < descendingorder.Length; i++)
-            {
+            //Sorting sortingObj = new Sorting();
+            //sortingObj.ReadConsoleData();
+            //Console.WriteLine("Max Element of given Array is " + sortingObj.MaxelementofArray());
+            //int[] descendingorder = sortingObj.SortingArray();
+            //for (int i = 0; i < descendingorder.Length; i++)
+            //{
 
-                Console.WriteLine("Array in descending order " + descendingorder[i]);
-            }
+            //    Console.WriteLine("Array in descending order " + descendingorder[i]);
+            //}
 
+            StringOperations stringoperationsobj = new StringOperations();
+            string substring=stringoperationsobj.ReadSubstring();
+            int count=stringoperationsobj.Issubstring(substring);
+            string output = (substring.Length == count) ? "is substring" : "not substring";
+            Console.WriteLine(output);
             Console.ReadLine();
         }
+            
+            
+        }
+        
     }
-}
+
