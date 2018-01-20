@@ -29,11 +29,12 @@ namespace InterfaceDemo
 
             //    Console.WriteLine("Array in descending order " + descendingorder[i]);
             //}
+            Console.WriteLine("Enter Main String");
+            string mainstring = Console.ReadLine();
 
             StringOperations stringoperationsobj = new StringOperations();
             string substring=stringoperationsobj.ReadSubstring();
-            string output=stringoperationsobj.Issubstring(substring);
-            //string output = (substring.Length == count) ? "is substring" : "not substring";
+            string output=stringoperationsobj.Issubstring(mainstring,substring);
             Console.WriteLine(output);
             Console.ReadLine();
         }

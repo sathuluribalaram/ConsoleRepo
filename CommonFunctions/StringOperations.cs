@@ -8,53 +8,55 @@ namespace CommonFunctions
 {
     public class StringOperations
     {
-        static string mainstring = "komala";
-        int i = 0, j, count = 0;
-        public static int ssl;
-        public string substring, output;
-
-        public char[] ms = new char[mainstring.Length];
-        public char[] ss = new char[ssl];
-
         public string ReadSubstring()
         {
             Console.WriteLine("Enter Sub String");
-             substring = Console.ReadLine();
-            ssl = substring.Length;
+            string substring = Console.ReadLine();
             return substring;
         }
-        public string Issubstring( string substring)
+        public string Issubstring(string mainstring, string substring)
         {
+            char[] ms = mainstring.ToCharArray();
+            char[] ss = substring.ToCharArray();
+            int i = 0, count, j;
+            string output = "not found";
+
             while (i < ms.Length)
             {
-                
-                 if (ss[0] == ms[i])
+                count = 0;
+
+                if (ss[0] == ms[i])
+                {
+
+                    for (j = 0; j < ss.Length; j++)
                     {
 
-                        for (j = 1; j <ss.Length; j++)
-                        {
-                        i++;
                         if (ss[j] == ms[i])
                         {
                             count++;
-                           
+                            i++;
+
                         }
-                        }
-                    string output = (count == ssl) ? "is substring" : ";not substring";
-                    
                     }
-                    else
+                    if (count == ss.Length)
                     {
-                        i++;
+                        output = "string found";
+                        return output;
                     }
-                
+
+                }
+                else
+                {
+                    i++;
+                }
+
+
             }
 
             return output;
         }
     }
 }
-    
 
 
 
@@ -174,5 +176,5 @@ namespace CommonFunctions
 
 
 
-       
-   
+
+
