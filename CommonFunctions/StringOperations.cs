@@ -9,11 +9,9 @@ namespace CommonFunctions
     public class StringOperations
     {
         static string mainstring = "komala";
-
-        int position = 0;
         int i = 0, j, count = 0;
         public static int ssl;
-        public string substring;
+        public string substring, output;
 
         public char[] ms = new char[mainstring.Length];
         public char[] ss = new char[ssl];
@@ -25,24 +23,34 @@ namespace CommonFunctions
             ssl = substring.Length;
             return substring;
         }
-        public int Issubstring( string substring)
+        public string Issubstring( string substring)
         {
             while (i < ms.Length)
             {
-                for (j = 0; j < ss.Length; j++)
-                {
-                    if (ss[j] == ms[i])
+                
+                 if (ss[0] == ms[i])
                     {
-                        count++;
+
+                        for (j = 1; j <ss.Length; j++)
+                        {
                         i++;
+                        if (ss[j] == ms[i])
+                        {
+                            count++;
+                           
+                        }
+                        }
+                    string output = (count == ssl) ? "is substring" : ";not substring";
+                    
                     }
                     else
                     {
                         i++;
                     }
-                }
+                
             }
-            return count;
+
+            return output;
         }
     }
 }

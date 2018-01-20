@@ -32,8 +32,8 @@ namespace InterfaceDemo
 
             StringOperations stringoperationsobj = new StringOperations();
             string substring=stringoperationsobj.ReadSubstring();
-            int count=stringoperationsobj.Issubstring(substring);
-            string output = (substring.Length == count) ? "is substring" : "not substring";
+            string output=stringoperationsobj.Issubstring(substring);
+            //string output = (substring.Length == count) ? "is substring" : "not substring";
             Console.WriteLine(output);
             Console.ReadLine();
         }
